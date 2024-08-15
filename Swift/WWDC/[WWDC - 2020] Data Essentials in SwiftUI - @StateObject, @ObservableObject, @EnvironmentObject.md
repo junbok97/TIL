@@ -1,5 +1,6 @@
-# [WWDC - 2019] Data Flow Through SwiftUI - @State, @Binding 요약
+- [[WWDC - 2019] Data Flow Through SwiftUI - @State, @Binding](https://github.com/junbok97/TIL/blob/main/Swift/WWDC/%5BWWDC%20-%202019%5D%20Data%20Flow%20Through%20SwiftUI%20-%20%40State%2C%20%40Binding.md)
 
+# [WWDC - 2019] Data Flow Through SwiftUI - @State, @Binding 요약
 - SwiftUI는 View와 View의 State관리가 중요
 - SwiftUI는 `@State` 를 통해 **Single Source of Truth(SOT)** 를 나타낼수 있음
 - SwiftUI는 `@State` 로 선언된 상태 프로퍼티의 저장소를 관리

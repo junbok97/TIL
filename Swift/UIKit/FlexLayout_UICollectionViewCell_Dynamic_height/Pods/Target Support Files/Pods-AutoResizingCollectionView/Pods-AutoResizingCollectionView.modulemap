@@ -1,0 +1,6 @@
+framework module Pods_AutoResizingCollectionView {
+  umbrella header "Pods-AutoResizingCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}

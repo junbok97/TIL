@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0039CF78404497B13D98167564305A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		0327DB3A5DF792DE142663DF890854DD /* Pods-AutoResizingCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 120F7EC135C118659D3D5DA1EB10535B /* Pods-AutoResizingCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03CB5BEFC4D6E836011E622266D09C9C /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 765DB4DDABDCA1419793DC7CC44C3D15 /* YGLayout.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		045E6F44BCD456AA4C8E76D306D27BAC /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB99A03BCF826066076DD7FFD8F9480 /* YGMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CEC1EDCC968634914268EA1C46FC3FB /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBA589E01C6FBA8E49D7C00BDC2793B6 /* Utils.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		118D8298D6D0642B8B3B1725808667B1 /* UIView+Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 023162BE15E9349BDEE4FF9A6503E33C /* UIView+Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11ABB5CDF1C7981E901B82689171CCAB /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DEDFDCEC5940117DF4132BB15174D82 /* Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A72BDF48D54181B69FBA438ED66A7D5 /* FlexLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DBBC63406A596932600071CD12B886E /* FlexLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D9002213F95EB43FCA70472C5B3E204 /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AF225AA2AE87EBCC49D697C14B86C00B /* YGLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		236D6C2AAA02C87DA92CA8C56723D46A /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A311FA59349625E0D79DF17E64771302 /* YGLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C1AD3F79BB0043A631E41D5FDBB6CE /* FlexLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1448B0731ACC46C863FA87817D637B /* FlexLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F607C4ECB68738EC7ED6D11C6625E6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		3129930E7A52ABF384FBF01C9B8505B9 /* YGLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D529DC7539C40B8F6CF7B12E893B89F /* YGLayout+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B46238C40418A28DFD0B68D85A8957E /* FlexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC23E1C66A1CA0FDC57B728A33758F /* FlexLayout.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		50CB579992CD1BE8F964E2AFC469259D /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5589958A5AECD91AB372DE63720B14 /* Percent.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		52121BE3C5EC1E39FAA15E1BD0C7B417 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18373A53137CF109295F991F1D91B089 /* YGEnums.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		587B8EDB62026A848420A695694C1222 /* FlexLayout+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D44A491BEECD8D9DF8685EAB73C5D /* FlexLayout+Enum.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		5B8006742B7683B8A27C5E104C27BD96 /* YGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 40CD7D11401CA481E6EABB1F19BD606D /* YGNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6197B46980EBF1748410A5689161499F /* YGNodePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 68C24E14A59CE7FA8DDA8F3C8B517BFE /* YGNodePrint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6678972785D06FF63F67BC4DF075271D /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B05E489B59E443DC68A2237C57825C6 /* YGStyle.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		6FA51332EF7D87CB6A5A8E53D4F5A106 /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 386BE7D10F377E413F5E6539339312E0 /* Yoga-internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7592BC53B6E6E80C129165516B6F9DCE /* YGLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD54CD87ABF9792D196912B950659BA4 /* YGLayout.mm */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		8474E8629237D11311CE641984CAD60D /* FlexLayout+Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEE849761431888F2419D1410C09CCE /* FlexLayout+Private.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		867FE211289DE76A2C20EA7CE521A07C /* YGLayoutExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0F7D83E06A1112747F5969A6B93F7 /* YGLayoutExtensions.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		8924542B02BD3943246E697C0C351798 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20DB4860F380F64FA8123EFDA955BB39 /* YGNode.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		95022ADB9253B5D54A5BECB412752BA1 /* UIView+Yoga.mm in Sources */ = {isa = PBXBuildFile; fileRef = D90B1689FBA2BA5BD81F93FDFA5B5DDF /* UIView+Yoga.mm */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		9F7C16757BAFFBF35D78D9AB6217C2F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A0BC2353204905D13E1DD49D75C5F02F /* Pods-AutoResizingCollectionViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F3FE9273E60346B3C3B66AB8D3676F /* Pods-AutoResizingCollectionViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A665C6F77A02C47C4C30612A092DD31F /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E9B2ABB84B83B16DE605DE3873855 /* YGNodePrint.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		B581BBCF047B9DDD94BCD36CE87DE5B0 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A7716E6B20C7C03321CAA488DF8888F /* Yoga.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		B597CD49C6FC0D5509467AF2A6598ED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		BC9C24D52D77DFC0B468EF99E6CBDCDC /* Pods-AutoResizingCollectionViewUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5C2005A51907042F83698B72301C56 /* Pods-AutoResizingCollectionViewUITests-dummy.m */; };
+		BFDF1822BB7158C5B8989C610D43FE5D /* Pods-AutoResizingCollectionViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64C398A704E8AE182393BBBD019C44 /* Pods-AutoResizingCollectionViewTests-dummy.m */; };
+		C50A4BF6EA0B931F1C35F7F56C7750C8 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C8AAB6B67776EDF4450EA4B1758D0A /* Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E42E035FE56EB7A92BF9B4A6721EB138 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A776383A1AD843DDC44D825099DF192 /* YGEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6CCF66C2A7052D6FAEFDB22411B097D /* FlexLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B8552F6E3B4B30DEB0FC4A2F1F512 /* FlexLayout-dummy.m */; };
+		E71A3862505E2DC2901C50AD2EE96DB0 /* YGStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F3157208E5124EC3604DD5962F1E73 /* YGStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1E4C2403FD0ACEE104DBA36086F85FB /* UIView+FlexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F252C138EF0A25EF6FE7604F64BBA0C /* UIView+FlexLayout.swift */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC"; }; };
+		F3874856F7B48949A3C0A55E9EE7AB26 /* Pods-AutoResizingCollectionViewUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE71A7E673189D7C6A655A91B086EB9 /* Pods-AutoResizingCollectionViewUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE68334CFFF9F6F1392097A0DE808893 /* Pods-AutoResizingCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A79D4E13A6115A293D90DF9B4964C5 /* Pods-AutoResizingCollectionView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		213AC1AA2B269588EF8443041FB64799 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3915D1AF7C858E4D5556892F18D6F159;
+			remoteInfo = FlexLayout;
+		};
+		ACED5E07686438D6C06F8854567E9BD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E34156D2E4F6B443E8C49B85F2D3D1C;
+			remoteInfo = "Pods-AutoResizingCollectionView";
+		};
+		D9C1FDD0F29D4928E07C57B0F06D7EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E34156D2E4F6B443E8C49B85F2D3D1C;
+			remoteInfo = "Pods-AutoResizingCollectionView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C46911AED38B4E182302B1E7CC8497 /* Pods-AutoResizingCollectionViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoResizingCollectionViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		023162BE15E9349BDEE4FF9A6503E33C /* UIView+Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Yoga.h"; path = "Sources/YogaKit/UIView+Yoga.h"; sourceTree = "<group>"; };
+		0465EDBBCF2B608C7DC57B5EDD3B3ECD /* Pods-AutoResizingCollectionViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoResizingCollectionViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		076C1425CBFD8A9D9754461527633887 /* Pods-AutoResizingCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoResizingCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		0A7716E6B20C7C03321CAA488DF8888F /* Yoga.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = Yoga.cpp; path = Sources/yoga/Yoga.cpp; sourceTree = "<group>"; };
+		0DEDFDCEC5940117DF4132BB15174D82 /* Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Sources/yoga/Utils.h; sourceTree = "<group>"; };
+		0E3E9B2ABB84B83B16DE605DE3873855 /* YGNodePrint.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = YGNodePrint.cpp; path = Sources/yoga/YGNodePrint.cpp; sourceTree = "<group>"; };
+		120F7EC135C118659D3D5DA1EB10535B /* Pods-AutoResizingCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoResizingCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		1256D19452EF92FDAAEDB6980CF09CCD /* Pods-AutoResizingCollectionView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoResizingCollectionView-frameworks.sh"; sourceTree = "<group>"; };
+		1563B524F0FDEA60E66CA094FBD97DED /* Pods-AutoResizingCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoResizingCollectionView.modulemap"; sourceTree = "<group>"; };
+		164FD99D42E9ACE7DF8D07E0314043D6 /* Pods-AutoResizingCollectionViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoResizingCollectionViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16E09D5831BCB49D3573AD5817535450 /* Pods-AutoResizingCollectionViewUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoResizingCollectionViewUITests.modulemap"; sourceTree = "<group>"; };
+		18373A53137CF109295F991F1D91B089 /* YGEnums.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = YGEnums.cpp; path = Sources/yoga/YGEnums.cpp; sourceTree = "<group>"; };
+		1A776383A1AD843DDC44D825099DF192 /* YGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGEnums.h; path = Sources/yoga/YGEnums.h; sourceTree = "<group>"; };
+		1F252C138EF0A25EF6FE7604F64BBA0C /* UIView+FlexLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+FlexLayout.swift"; path = "Sources/Impl/UIView+FlexLayout.swift"; sourceTree = "<group>"; };
+		20DB4860F380F64FA8123EFDA955BB39 /* YGNode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = YGNode.cpp; path = Sources/yoga/YGNode.cpp; sourceTree = "<group>"; };
+		264AE02535B409D22ABBCEDDDA0A3801 /* Pods-AutoResizingCollectionViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoResizingCollectionViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29F563103388C11C87FC1F8DCB9C11F7 /* Pods-AutoResizingCollectionViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoResizingCollectionViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1C86998F1E8F8B1EE29E375B3130F0 /* Pods-AutoResizingCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoResizingCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		371D44A491BEECD8D9DF8685EAB73C5D /* FlexLayout+Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlexLayout+Enum.swift"; path = "Sources/Impl/FlexLayout+Enum.swift"; sourceTree = "<group>"; };
+		386BE7D10F377E413F5E6539339312E0 /* Yoga-internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Yoga-internal.h"; path = "Sources/yoga/Yoga-internal.h"; sourceTree = "<group>"; };
+		3A64C398A704E8AE182393BBBD019C44 /* Pods-AutoResizingCollectionViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoResizingCollectionViewTests-dummy.m"; sourceTree = "<group>"; };
+		3A8D1EE11685590011B86D0BC8F0C083 /* Pods-AutoResizingCollectionView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoResizingCollectionView-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B05E489B59E443DC68A2237C57825C6 /* YGStyle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = YGStyle.cpp; path = Sources/yoga/YGStyle.cpp; sourceTree = "<group>"; };
+		3CB99A03BCF826066076DD7FFD8F9480 /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = Sources/yoga/YGMacros.h; sourceTree = "<group>"; };
+		40CD7D11401CA481E6EABB1F19BD606D /* YGNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGNode.h; path = Sources/yoga/YGNode.h; sourceTree = "<group>"; };
+		4C5589958A5AECD91AB372DE63720B14 /* Percent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Percent.swift; path = Sources/Percent.swift; sourceTree = "<group>"; };
+		4F1448B0731ACC46C863FA87817D637B /* FlexLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexLayout-umbrella.h"; sourceTree = "<group>"; };
+		66C8AAB6B67776EDF4450EA4B1758D0A /* Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Yoga.h; path = Sources/yoga/Yoga.h; sourceTree = "<group>"; };
+		68C24E14A59CE7FA8DDA8F3C8B517BFE /* YGNodePrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGNodePrint.h; path = Sources/yoga/YGNodePrint.h; sourceTree = "<group>"; };
+		6D529DC7539C40B8F6CF7B12E893B89F /* YGLayout+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YGLayout+Private.h"; path = "Sources/YogaKit/YGLayout+Private.h"; sourceTree = "<group>"; };
+		6FEE849761431888F2419D1410C09CCE /* FlexLayout+Private.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FlexLayout+Private.swift"; path = "Sources/Impl/FlexLayout+Private.swift"; sourceTree = "<group>"; };
+		72B2BEDBCA67688326F67B7A46ABBCCE /* FlexLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexLayout-prefix.pch"; sourceTree = "<group>"; };
+		765DB4DDABDCA1419793DC7CC44C3D15 /* YGLayout.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = YGLayout.cpp; path = Sources/yoga/YGLayout.cpp; sourceTree = "<group>"; };
+		78F3FE9273E60346B3C3B66AB8D3676F /* Pods-AutoResizingCollectionViewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoResizingCollectionViewTests-umbrella.h"; sourceTree = "<group>"; };
+		79A79D4E13A6115A293D90DF9B4964C5 /* Pods-AutoResizingCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoResizingCollectionView-dummy.m"; sourceTree = "<group>"; };
+		7F2A98991BB389351154A820B1FB32C3 /* Pods-AutoResizingCollectionViewTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoResizingCollectionViewTests-Info.plist"; sourceTree = "<group>"; };
+		80F3157208E5124EC3604DD5962F1E73 /* YGStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGStyle.h; path = Sources/yoga/YGStyle.h; sourceTree = "<group>"; };
+		9164DDE3A279B47B857A366EB9A6D6B3 /* Pods-AutoResizingCollectionViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoResizingCollectionViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		98693795EC184629D82F83D351F512DD /* FlexLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexLayout.xcconfig; sourceTree = "<group>"; };
+		9CEC23E1C66A1CA0FDC57B728A33758F /* FlexLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexLayout.swift; path = Sources/FlexLayout.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBBC63406A596932600071CD12B886E /* FlexLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlexLayout.h; path = Sources/SupportingFiles/FlexLayout.h; sourceTree = "<group>"; };
+		9EA0F7D83E06A1112747F5969A6B93F7 /* YGLayoutExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YGLayoutExtensions.swift; path = Sources/YogaKit/YGLayoutExtensions.swift; sourceTree = "<group>"; };
+		A1902829EF6DDCDA57330DF7843C2BA5 /* Pods_AutoResizingCollectionViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoResizingCollectionViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BF35297979ECD7CD7AD9D4C97E9429 /* Pods-AutoResizingCollectionViewUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoResizingCollectionViewUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A1C66D3B28786882082058B9AEE745F3 /* Pods-AutoResizingCollectionViewUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoResizingCollectionViewUITests-Info.plist"; sourceTree = "<group>"; };
+		A311FA59349625E0D79DF17E64771302 /* YGLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = Sources/YogaKit/YGLayout.h; sourceTree = "<group>"; };
+		AD54CD87ABF9792D196912B950659BA4 /* YGLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = YGLayout.mm; path = Sources/YogaKit/YGLayout.mm; sourceTree = "<group>"; };
+		AD9BC9E49B0983CA7170D8E23D6D340A /* FlexLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexLayout.modulemap; sourceTree = "<group>"; };
+		AF225AA2AE87EBCC49D697C14B86C00B /* YGLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = Sources/yoga/YGLayout.h; sourceTree = "<group>"; };
+		B196FCE14B34FE9832FE3071DC8E5CDB /* Pods-AutoResizingCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoResizingCollectionView-Info.plist"; sourceTree = "<group>"; };
+		B24124A97B5564B1A69A3074B0E75571 /* Pods-AutoResizingCollectionViewUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoResizingCollectionViewUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BBA589E01C6FBA8E49D7C00BDC2793B6 /* Utils.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = Utils.cpp; path = Sources/yoga/Utils.cpp; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD5C2005A51907042F83698B72301C56 /* Pods-AutoResizingCollectionViewUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoResizingCollectionViewUITests-dummy.m"; sourceTree = "<group>"; };
+		CE1F50760BAB1753796392DB0B440ACF /* Pods_AutoResizingCollectionViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoResizingCollectionViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69B8552F6E3B4B30DEB0FC4A2F1F512 /* FlexLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexLayout-dummy.m"; sourceTree = "<group>"; };
+		D90B1689FBA2BA5BD81F93FDFA5B5DDF /* UIView+Yoga.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "UIView+Yoga.mm"; path = "Sources/YogaKit/UIView+Yoga.mm"; sourceTree = "<group>"; };
+		D960348970FC7CCACFCF36CEA18E2265 /* Pods-AutoResizingCollectionViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AutoResizingCollectionViewTests.modulemap"; sourceTree = "<group>"; };
+		DCE71A7E673189D7C6A655A91B086EB9 /* Pods-AutoResizingCollectionViewUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoResizingCollectionViewUITests-umbrella.h"; sourceTree = "<group>"; };
+		E0BD05A9E01BA1E47633AFBFF808021E /* FlexLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D08E837A65C2139C925D9D11B7F68E /* Pods-AutoResizingCollectionView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoResizingCollectionView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE1BC8F3F8207BB23C78CB8DE14637AC /* FlexLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexLayout-Info.plist"; sourceTree = "<group>"; };
+		F34DBA38DADB3E4C7BF8DAC458F4F0CC /* Pods_AutoResizingCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoResizingCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C6724DCCC2EED7676B4F3562D74FF51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B597CD49C6FC0D5509467AF2A6598ED8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E3BC49EA4A843DA3F4CB339D483BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F607C4ECB68738EC7ED6D11C6625E6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97767632B0AC84C795C24A5B7209A3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0039CF78404497B13D98167564305A6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92374EBD0027E4FE86D489D8161660A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7C16757BAFFBF35D78D9AB6217C2F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20F916D903961E0EA673942D92D0AE13 /* Pods-AutoResizingCollectionViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16E09D5831BCB49D3573AD5817535450 /* Pods-AutoResizingCollectionViewUITests.modulemap */,
+				A1BF35297979ECD7CD7AD9D4C97E9429 /* Pods-AutoResizingCollectionViewUITests-acknowledgements.markdown */,
+				B24124A97B5564B1A69A3074B0E75571 /* Pods-AutoResizingCollectionViewUITests-acknowledgements.plist */,
+				CD5C2005A51907042F83698B72301C56 /* Pods-AutoResizingCollectionViewUITests-dummy.m */,
+				A1C66D3B28786882082058B9AEE745F3 /* Pods-AutoResizingCollectionViewUITests-Info.plist */,
+				DCE71A7E673189D7C6A655A91B086EB9 /* Pods-AutoResizingCollectionViewUITests-umbrella.h */,
+				164FD99D42E9ACE7DF8D07E0314043D6 /* Pods-AutoResizingCollectionViewUITests.debug.xcconfig */,
+				0465EDBBCF2B608C7DC57B5EDD3B3ECD /* Pods-AutoResizingCollectionViewUITests.release.xcconfig */,
+			);
+			name = "Pods-AutoResizingCollectionViewUITests";
+			path = "Target Support Files/Pods-AutoResizingCollectionViewUITests";
+			sourceTree = "<group>";
+		};
+		4AB1F353EDB998F153FE3D1A90E856DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D66263F0FE1C0441375167C1D44CEDE /* FlexLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		565F7E46413F7B723CEB55421582666A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2C2361707F1EFD508766512658E31D /* Pods-AutoResizingCollectionView */,
+				E158B798058E7B862130BF19F0193F95 /* Pods-AutoResizingCollectionViewTests */,
+				20F916D903961E0EA673942D92D0AE13 /* Pods-AutoResizingCollectionViewUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7E2C2361707F1EFD508766512658E31D /* Pods-AutoResizingCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1563B524F0FDEA60E66CA094FBD97DED /* Pods-AutoResizingCollectionView.modulemap */,
+				E3D08E837A65C2139C925D9D11B7F68E /* Pods-AutoResizingCollectionView-acknowledgements.markdown */,
+				3A8D1EE11685590011B86D0BC8F0C083 /* Pods-AutoResizingCollectionView-acknowledgements.plist */,
+				79A79D4E13A6115A293D90DF9B4964C5 /* Pods-AutoResizingCollectionView-dummy.m */,
+				1256D19452EF92FDAAEDB6980CF09CCD /* Pods-AutoResizingCollectionView-frameworks.sh */,
+				B196FCE14B34FE9832FE3071DC8E5CDB /* Pods-AutoResizingCollectionView-Info.plist */,
+				120F7EC135C118659D3D5DA1EB10535B /* Pods-AutoResizingCollectionView-umbrella.h */,
+				2A1C86998F1E8F8B1EE29E375B3130F0 /* Pods-AutoResizingCollectionView.debug.xcconfig */,
+				076C1425CBFD8A9D9754461527633887 /* Pods-AutoResizingCollectionView.release.xcconfig */,
+			);
+			name = "Pods-AutoResizingCollectionView";
+			path = "Target Support Files/Pods-AutoResizingCollectionView";
+			sourceTree = "<group>";
+		};
+		8D66263F0FE1C0441375167C1D44CEDE /* FlexLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9DBBC63406A596932600071CD12B886E /* FlexLayout.h */,
+				9CEC23E1C66A1CA0FDC57B728A33758F /* FlexLayout.swift */,
+				371D44A491BEECD8D9DF8685EAB73C5D /* FlexLayout+Enum.swift */,
+				6FEE849761431888F2419D1410C09CCE /* FlexLayout+Private.swift */,
+				4C5589958A5AECD91AB372DE63720B14 /* Percent.swift */,
+				1F252C138EF0A25EF6FE7604F64BBA0C /* UIView+FlexLayout.swift */,
+				023162BE15E9349BDEE4FF9A6503E33C /* UIView+Yoga.h */,
+				D90B1689FBA2BA5BD81F93FDFA5B5DDF /* UIView+Yoga.mm */,
+				BBA589E01C6FBA8E49D7C00BDC2793B6 /* Utils.cpp */,
+				0DEDFDCEC5940117DF4132BB15174D82 /* Utils.h */,
+				18373A53137CF109295F991F1D91B089 /* YGEnums.cpp */,
+				1A776383A1AD843DDC44D825099DF192 /* YGEnums.h */,
+				765DB4DDABDCA1419793DC7CC44C3D15 /* YGLayout.cpp */,
+				A311FA59349625E0D79DF17E64771302 /* YGLayout.h */,
+				AF225AA2AE87EBCC49D697C14B86C00B /* YGLayout.h */,
+				AD54CD87ABF9792D196912B950659BA4 /* YGLayout.mm */,
+				6D529DC7539C40B8F6CF7B12E893B89F /* YGLayout+Private.h */,
+				9EA0F7D83E06A1112747F5969A6B93F7 /* YGLayoutExtensions.swift */,
+				3CB99A03BCF826066076DD7FFD8F9480 /* YGMacros.h */,
+				20DB4860F380F64FA8123EFDA955BB39 /* YGNode.cpp */,
+				40CD7D11401CA481E6EABB1F19BD606D /* YGNode.h */,
+				0E3E9B2ABB84B83B16DE605DE3873855 /* YGNodePrint.cpp */,
+				68C24E14A59CE7FA8DDA8F3C8B517BFE /* YGNodePrint.h */,
+				3B05E489B59E443DC68A2237C57825C6 /* YGStyle.cpp */,
+				80F3157208E5124EC3604DD5962F1E73 /* YGStyle.h */,
+				0A7716E6B20C7C03321CAA488DF8888F /* Yoga.cpp */,
+				66C8AAB6B67776EDF4450EA4B1758D0A /* Yoga.h */,
+				386BE7D10F377E413F5E6539339312E0 /* Yoga-internal.h */,
+				E30122CAFAF415BBEE203CB1A2460D51 /* Support Files */,
+			);
+			path = FlexLayout;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B950E5899A0B2468E5DCC05C6CE55EA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0BD05A9E01BA1E47633AFBFF808021E /* FlexLayout.framework */,
+				F34DBA38DADB3E4C7BF8DAC458F4F0CC /* Pods_AutoResizingCollectionView.framework */,
+				CE1F50760BAB1753796392DB0B440ACF /* Pods_AutoResizingCollectionViewTests.framework */,
+				A1902829EF6DDCDA57330DF7843C2BA5 /* Pods_AutoResizingCollectionViewUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4AB1F353EDB998F153FE3D1A90E856DA /* Pods */,
+				B950E5899A0B2468E5DCC05C6CE55EA4 /* Products */,
+				565F7E46413F7B723CEB55421582666A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E158B798058E7B862130BF19F0193F95 /* Pods-AutoResizingCollectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D960348970FC7CCACFCF36CEA18E2265 /* Pods-AutoResizingCollectionViewTests.modulemap */,
+				264AE02535B409D22ABBCEDDDA0A3801 /* Pods-AutoResizingCollectionViewTests-acknowledgements.markdown */,
+				00C46911AED38B4E182302B1E7CC8497 /* Pods-AutoResizingCollectionViewTests-acknowledgements.plist */,
+				3A64C398A704E8AE182393BBBD019C44 /* Pods-AutoResizingCollectionViewTests-dummy.m */,
+				7F2A98991BB389351154A820B1FB32C3 /* Pods-AutoResizingCollectionViewTests-Info.plist */,
+				78F3FE9273E60346B3C3B66AB8D3676F /* Pods-AutoResizingCollectionViewTests-umbrella.h */,
+				29F563103388C11C87FC1F8DCB9C11F7 /* Pods-AutoResizingCollectionViewTests.debug.xcconfig */,
+				9164DDE3A279B47B857A366EB9A6D6B3 /* Pods-AutoResizingCollectionViewTests.release.xcconfig */,
+			);
+			name = "Pods-AutoResizingCollectionViewTests";
+			path = "Target Support Files/Pods-AutoResizingCollectionViewTests";
+			sourceTree = "<group>";
+		};
+		E30122CAFAF415BBEE203CB1A2460D51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD9BC9E49B0983CA7170D8E23D6D340A /* FlexLayout.modulemap */,
+				98693795EC184629D82F83D351F512DD /* FlexLayout.xcconfig */,
+				D69B8552F6E3B4B30DEB0FC4A2F1F512 /* FlexLayout-dummy.m */,
+				EE1BC8F3F8207BB23C78CB8DE14637AC /* FlexLayout-Info.plist */,
+				72B2BEDBCA67688326F67B7A46ABBCCE /* FlexLayout-prefix.pch */,
+				4F1448B0731ACC46C863FA87817D637B /* FlexLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlexLayout";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B26E3D0DD52F0D89B487AB3E72E11501 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C1AD3F79BB0043A631E41D5FDBB6CE /* FlexLayout-umbrella.h in Headers */,
+				1A72BDF48D54181B69FBA438ED66A7D5 /* FlexLayout.h in Headers */,
+				118D8298D6D0642B8B3B1725808667B1 /* UIView+Yoga.h in Headers */,
+				11ABB5CDF1C7981E901B82689171CCAB /* Utils.h in Headers */,
+				E42E035FE56EB7A92BF9B4A6721EB138 /* YGEnums.h in Headers */,
+				3129930E7A52ABF384FBF01C9B8505B9 /* YGLayout+Private.h in Headers */,
+				1D9002213F95EB43FCA70472C5B3E204 /* YGLayout.h in Headers */,
+				236D6C2AAA02C87DA92CA8C56723D46A /* YGLayout.h in Headers */,
+				045E6F44BCD456AA4C8E76D306D27BAC /* YGMacros.h in Headers */,
+				5B8006742B7683B8A27C5E104C27BD96 /* YGNode.h in Headers */,
+				6197B46980EBF1748410A5689161499F /* YGNodePrint.h in Headers */,
+				E71A3862505E2DC2901C50AD2EE96DB0 /* YGStyle.h in Headers */,
+				6FA51332EF7D87CB6A5A8E53D4F5A106 /* Yoga-internal.h in Headers */,
+				C50A4BF6EA0B931F1C35F7F56C7750C8 /* Yoga.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC158EEB725D5F117779EC6A4C4F1730 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0327DB3A5DF792DE142663DF890854DD /* Pods-AutoResizingCollectionView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3467DAED99F7AF6A9665EC55DB8FAAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BC2353204905D13E1DD49D75C5F02F /* Pods-AutoResizingCollectionViewTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8AE5A831FE7EF3F93AE083E512F6DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3874856F7B48949A3C0A55E9EE7AB26 /* Pods-AutoResizingCollectionViewUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3915D1AF7C858E4D5556892F18D6F159 /* FlexLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC4D75F9D41A95952753BFAD0EC51FE /* Build configuration list for PBXNativeTarget "FlexLayout" */;
+			buildPhases = (
+				B26E3D0DD52F0D89B487AB3E72E11501 /* Headers */,
+				BDD500681D561F51C2780F8FAD5CF215 /* Sources */,
+				85E3BC49EA4A843DA3F4CB339D483BCF /* Frameworks */,
+				6BF6CD79E086A631E2ED152F817EB65F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexLayout;
+			productName = FlexLayout;
+			productReference = E0BD05A9E01BA1E47633AFBFF808021E /* FlexLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E34156D2E4F6B443E8C49B85F2D3D1C /* Pods-AutoResizingCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585777D583035058910A46E827AD1D97 /* Build configuration list for PBXNativeTarget "Pods-AutoResizingCollectionView" */;
+			buildPhases = (
+				DC158EEB725D5F117779EC6A4C4F1730 /* Headers */,
+				ED5AA3AA315F8518E7A8F544E24F5749 /* Sources */,
+				E92374EBD0027E4FE86D489D8161660A /* Frameworks */,
+				591C135CD1DBC31D447C0265D8DD41F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDC1158D21271F07AD83C5D373A6E9C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoResizingCollectionView";
+			productName = "Pods-AutoResizingCollectionView";
+			productReference = F34DBA38DADB3E4C7BF8DAC458F4F0CC /* Pods_AutoResizingCollectionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6E9F536D73DCA2DDD6C1D8A076ADEB7 /* Pods-AutoResizingCollectionViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DF3473E9C7060B84F510B6FE1C2EBB /* Build configuration list for PBXNativeTarget "Pods-AutoResizingCollectionViewUITests" */;
+			buildPhases = (
+				FD8AE5A831FE7EF3F93AE083E512F6DD /* Headers */,
+				EDA869BE15F0E833B093F0E857DA7D6A /* Sources */,
+				97767632B0AC84C795C24A5B7209A3CA /* Frameworks */,
+				FFC1FB3CA894B8411741D547FABDE347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0DFEFF89C61E328E4A487DD87D883A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoResizingCollectionViewUITests";
+			productName = "Pods-AutoResizingCollectionViewUITests";
+			productReference = A1902829EF6DDCDA57330DF7843C2BA5 /* Pods_AutoResizingCollectionViewUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAFF8FD8D7C32B337CF25DE8F3A6CA79 /* Pods-AutoResizingCollectionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCEF7F2F6A26B266A34217E5F567BBF /* Build configuration list for PBXNativeTarget "Pods-AutoResizingCollectionViewTests" */;
+			buildPhases = (
+				F3467DAED99F7AF6A9665EC55DB8FAAD /* Headers */,
+				0129089E3F4D0DF864CAC0F103B898EF /* Sources */,
+				5C6724DCCC2EED7676B4F3562D74FF51 /* Frameworks */,
+				6F68C9C5CD3DE0B13752231D4C6D0BFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F10BC8777E240D99FF7BD5F55F77C5C /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoResizingCollectionViewTests";
+			productName = "Pods-AutoResizingCollectionViewTests";
+			productReference = CE1F50760BAB1753796392DB0B440ACF /* Pods_AutoResizingCollectionViewTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B950E5899A0B2468E5DCC05C6CE55EA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3915D1AF7C858E4D5556892F18D6F159 /* FlexLayout */,
+				7E34156D2E4F6B443E8C49B85F2D3D1C /* Pods-AutoResizingCollectionView */,
+				DAFF8FD8D7C32B337CF25DE8F3A6CA79 /* Pods-AutoResizingCollectionViewTests */,
+				A6E9F536D73DCA2DDD6C1D8A076ADEB7 /* Pods-AutoResizingCollectionViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		591C135CD1DBC31D447C0265D8DD41F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF6CD79E086A631E2ED152F817EB65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F68C9C5CD3DE0B13752231D4C6D0BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1FB3CA894B8411741D547FABDE347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0129089E3F4D0DF864CAC0F103B898EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDF1822BB7158C5B8989C610D43FE5D /* Pods-AutoResizingCollectionViewTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD500681D561F51C2780F8FAD5CF215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587B8EDB62026A848420A695694C1222 /* FlexLayout+Enum.swift in Sources */,
+				8474E8629237D11311CE641984CAD60D /* FlexLayout+Private.swift in Sources */,
+				E6CCF66C2A7052D6FAEFDB22411B097D /* FlexLayout-dummy.m in Sources */,
+				3B46238C40418A28DFD0B68D85A8957E /* FlexLayout.swift in Sources */,
+				50CB579992CD1BE8F964E2AFC469259D /* Percent.swift in Sources */,
+				F1E4C2403FD0ACEE104DBA36086F85FB /* UIView+FlexLayout.swift in Sources */,
+				95022ADB9253B5D54A5BECB412752BA1 /* UIView+Yoga.mm in Sources */,
+				0CEC1EDCC968634914268EA1C46FC3FB /* Utils.cpp in Sources */,
+				52121BE3C5EC1E39FAA15E1BD0C7B417 /* YGEnums.cpp in Sources */,
+				03CB5BEFC4D6E836011E622266D09C9C /* YGLayout.cpp in Sources */,
+				7592BC53B6E6E80C129165516B6F9DCE /* YGLayout.mm in Sources */,
+				867FE211289DE76A2C20EA7CE521A07C /* YGLayoutExtensions.swift in Sources */,
+				8924542B02BD3943246E697C0C351798 /* YGNode.cpp in Sources */,
+				A665C6F77A02C47C4C30612A092DD31F /* YGNodePrint.cpp in Sources */,
+				6678972785D06FF63F67BC4DF075271D /* YGStyle.cpp in Sources */,
+				B581BBCF047B9DDD94BCD36CE87DE5B0 /* Yoga.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5AA3AA315F8518E7A8F544E24F5749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE68334CFFF9F6F1392097A0DE808893 /* Pods-AutoResizingCollectionView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA869BE15F0E833B093F0E857DA7D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9C24D52D77DFC0B468EF99E6CBDCDC /* Pods-AutoResizingCollectionViewUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F10BC8777E240D99FF7BD5F55F77C5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoResizingCollectionView";
+			target = 7E34156D2E4F6B443E8C49B85F2D3D1C /* Pods-AutoResizingCollectionView */;
+			targetProxy = D9C1FDD0F29D4928E07C57B0F06D7EC8 /* PBXContainerItemProxy */;
+		};
+		BDC1158D21271F07AD83C5D373A6E9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexLayout;
+			target = 3915D1AF7C858E4D5556892F18D6F159 /* FlexLayout */;
+			targetProxy = 213AC1AA2B269588EF8443041FB64799 /* PBXContainerItemProxy */;
+		};
+		E0DFEFF89C61E328E4A487DD87D883A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AutoResizingCollectionView";
+			target = 7E34156D2E4F6B443E8C49B85F2D3D1C /* Pods-AutoResizingCollectionView */;
+			targetProxy = ACED5E07686438D6C06F8854567E9BD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12F178EEC7A99F6F30EE703003C81E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4AC9DC3FB7838D023955B59E9422F247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164FD99D42E9ACE7DF8D07E0314043D6 /* Pods-AutoResizingCollectionViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoResizingCollectionViewUITests/Pods-AutoResizingCollectionViewUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoResizingCollectionViewUITests/Pods-AutoResizingCollectionViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61F238622FE2B29C53052619D189DDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98693795EC184629D82F83D351F512DD /* FlexLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexLayout/FlexLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexLayout/FlexLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexLayout/FlexLayout.modulemap";
+				PRODUCT_MODULE_NAME = FlexLayout;
+				PRODUCT_NAME = FlexLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70BCBE2DDFBC3DA2B0599F931C3851F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F563103388C11C87FC1F8DCB9C11F7 /* Pods-AutoResizingCollectionViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoResizingCollectionViewTests/Pods-AutoResizingCollectionViewTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoResizingCollectionViewTests/Pods-AutoResizingCollectionViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BED88AC2116F543C88432D9869EB55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0465EDBBCF2B608C7DC57B5EDD3B3ECD /* Pods-AutoResizingCollectionViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoResizingCollectionViewUITests/Pods-AutoResizingCollectionViewUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoResizingCollectionViewUITests/Pods-AutoResizingCollectionViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3EDB9AC4ED20B24038F2068CCA28871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1C86998F1E8F8B1EE29E375B3130F0 /* Pods-AutoResizingCollectionView.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoResizingCollectionView/Pods-AutoResizingCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoResizingCollectionView/Pods-AutoResizingCollectionView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B225972148A10C0343DAFF188FF3D7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B43C44169A89FAD3CF81EFC43AE360C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076C1425CBFD8A9D9754461527633887 /* Pods-AutoResizingCollectionView.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoResizingCollectionView/Pods-AutoResizingCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoResizingCollectionView/Pods-AutoResizingCollectionView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C34E4BAB51651D80FD30FE8C8AA0FC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98693795EC184629D82F83D351F512DD /* FlexLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexLayout/FlexLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexLayout/FlexLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexLayout/FlexLayout.modulemap";
+				PRODUCT_MODULE_NAME = FlexLayout;
+				PRODUCT_NAME = FlexLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E26D194B2B7F7C2A6D66D4CF18FDE167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9164DDE3A279B47B857A366EB9A6D6B3 /* Pods-AutoResizingCollectionViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoResizingCollectionViewTests/Pods-AutoResizingCollectionViewTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoResizingCollectionViewTests/Pods-AutoResizingCollectionViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DF3473E9C7060B84F510B6FE1C2EBB /* Build configuration list for PBXNativeTarget "Pods-AutoResizingCollectionViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC9DC3FB7838D023955B59E9422F247 /* Debug */,
+				7BED88AC2116F543C88432D9869EB55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F178EEC7A99F6F30EE703003C81E91 /* Debug */,
+				B225972148A10C0343DAFF188FF3D7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585777D583035058910A46E827AD1D97 /* Build configuration list for PBXNativeTarget "Pods-AutoResizingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EDB9AC4ED20B24038F2068CCA28871 /* Debug */,
+				B43C44169A89FAD3CF81EFC43AE360C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DC4D75F9D41A95952753BFAD0EC51FE /* Build configuration list for PBXNativeTarget "FlexLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F238622FE2B29C53052619D189DDBE /* Debug */,
+				C34E4BAB51651D80FD30FE8C8AA0FC3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCEF7F2F6A26B266A34217E5F567BBF /* Build configuration list for PBXNativeTarget "Pods-AutoResizingCollectionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BCBE2DDFBC3DA2B0599F931C3851F1 /* Debug */,
+				E26D194B2B7F7C2A6D66D4CF18FDE167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

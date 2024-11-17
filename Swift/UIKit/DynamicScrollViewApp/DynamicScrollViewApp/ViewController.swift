@@ -142,7 +142,6 @@ class ViewController: UIViewController {
         )
         
         NSLayoutConstraint.activate([
-
             containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             containerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),

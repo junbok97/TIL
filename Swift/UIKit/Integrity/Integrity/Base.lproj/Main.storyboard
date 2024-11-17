@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Integrity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mso-5n-bUN">
+                                <rect key="frame" x="16" y="99" width="361" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="press the button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBH-Ge-Vzw">
+                                <rect key="frame" x="16" y="237" width="361" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyS-pe-UI7">
+                                <rect key="frame" x="111.33333333333333" y="629.33333333333337" width="170.66666666666669" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jailbreak Detection"/>
+                                <connections>
+                                    <action selector="jailbreakAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIi-qb-HZa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIc-pb-RF6">
+                                <rect key="frame" x="108.33333333333333" y="683.66666666666663" width="176.66666666666669" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Integrity Verification"/>
+                                <connections>
+                                    <action selector="integrityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GeP-Rb-y29"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPO-rs-kJn">
+                                <rect key="frame" x="16" y="133" width="361" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDF-g5-NqX">
+                                <rect key="frame" x="123.66666666666669" y="738" width="146" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Anti-Debugging"/>
+                                <connections>
+                                    <action selector="DebuggingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AL-7k-fMu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iIc-pb-RF6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Tz-jx-9lM"/>
+                            <constraint firstItem="TBH-Ge-Vzw" firstAttribute="top" secondItem="uPO-rs-kJn" secondAttribute="bottom" constant="80" id="CcB-xO-4UC"/>
+                            <constraint firstItem="TBH-Ge-Vzw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ELZ-UC-7To"/>
+                            <constraint firstItem="uPO-rs-kJn" firstAttribute="top" secondItem="Mso-5n-bUN" secondAttribute="bottom" constant="10" id="Gyk-IV-EiU"/>
+                            <constraint firstItem="pyS-pe-UI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NdS-ir-CIX"/>
+                            <constraint firstItem="Mso-5n-bUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Uoe-Vf-RGt"/>
+                            <constraint firstItem="tDF-g5-NqX" firstAttribute="top" secondItem="iIc-pb-RF6" secondAttribute="bottom" constant="20" id="ZCC-6P-mOT"/>
+                            <constraint firstItem="tDF-g5-NqX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="csy-JN-BNA"/>
+                            <constraint firstItem="Mso-5n-bUN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="g1P-Ih-8pQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iIc-pb-RF6" secondAttribute="bottom" constant="100" id="gtJ-Bo-NkB"/>
+                            <constraint firstItem="iIc-pb-RF6" firstAttribute="top" secondItem="pyS-pe-UI7" secondAttribute="bottom" constant="20" id="kR2-cY-Y5X"/>
+                            <constraint firstItem="uPO-rs-kJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lOf-Qz-amf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mso-5n-bUN" secondAttribute="trailing" constant="16" id="rY4-fG-EcZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uPO-rs-kJn" secondAttribute="trailing" constant="16" id="teu-u8-k0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBH-Ge-Vzw" secondAttribute="trailing" constant="16" id="wnt-pW-gDy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textCurrent" destination="uPO-rs-kJn" id="wsc-FE-qzj"/>
+                        <outlet property="textOriginal" destination="Mso-5n-bUN" id="uJq-UR-pT8"/>
+                        <outlet property="textResult" destination="TBH-Ge-Vzw" id="Yb1-jV-NV6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

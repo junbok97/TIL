@@ -1,0 +1,12 @@
+//
+//  Dev.xcconfig
+//  BundleIdentifier
+//
+//  Created by 이준복 on 11/17/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+APP_BUNDLE_IDENTIFIER = com.gmail.jubbok97-Dev

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BundleIdentifier
+//  DynamicAppIcon
 //
-//  Created by 이준복 on 11/17/24.
+//  Created by 이준복 on 4/19/25.
 //
 
 import UIKit
